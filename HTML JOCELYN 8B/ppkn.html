@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bar Navigasi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    .hero {
+      height: 300px;
+      background-color: #dafbff;
+      background-image: url('oh.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px #000000;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      background-color: rgba(237, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header a {
+      color: #4fa6b3;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: rgba(212, 242, 247, 0.9);
+    }
+
+    header a:hover {
+      background-color: rgba(191, 221, 229, 0.9);
+      color: #245962;
+      transform: scale(1.05);
+    }
+
+    .content-wrapper {
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #2f585c;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: rgb(2, 124, 120);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Ini Adalah 'PPKN'</h1>
+  </div>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="ips.html">IPS</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ppkn.html">PPKN</a>
+    <a href="english.html">English</a>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="text">
+      <p style="margin-bottom: 20px;">
+        Chiang Kai-Shek Memorial Hall, yang dibangun untuk mengenang pendiri Taiwan setelah kematiannya, berfungsi sebagai simbol penghargaan terhadap kontribusinya dalam membangun negara Taiwan modern. Dengan dukungan Amerika Serikat dalam perjuangannya melawan komunisme, Chiang berhasil membentuk Taiwan sebagai negara yang mandiri, dan warisan politik serta budayanya masih berpengaruh dalam perdebatan identitas Taiwan hingga kini. Melalui kebijakan pendidikan dan politik yang dijalankan oleh Chiang dan rezim Kuomintang, Taiwan berhasil membangun persatuan dan semangat nasionalisme. Saat ini, Memorial Hall ini berperan sebagai tempat untuk mendidik generasi muda melalui pameran interaktif yang menampilkan artefak-artefak bersejarah, yang sebagian besar berasal dari harta China yang dibawa ke Taiwan oleh Chiang Kai-Shek, serta program edukasi yang mengajak pengunjung untuk lebih memahami sejarah dan warisan Taiwan.</p>
+      </p>
+    </div>
+    <div class="image">
+      <img src="poo.jpg" alt="Hualien Trip">
+    </div>
+  </div>
+
+  <div class="content-wrapper" style="margin-top: 0;">
+    <div class="text" style="flex: 1 1 100%;">
+
+      <p style="margin-bottom: 20px;">
+        National Palace Museum awalnya digunakan untuk menyimpan barang-barang antik dari China yang dibawa ke Taiwan padaa tahun 1949. Museum ini bertujuan melestarikan dan memamerkan barang antik ini ke seluruh dunia dan belajar darinya. Di museum tersebut, terdapat sebuah batu berbentuk daging. Batu ini dibuat oleh seorang seniman zaman dahulu agar masyarakat pada saat itu yang sangat miskin, dapat makan nasi sambil memandang dan membayangkan daging layaknya benar-benar makan daging. Arsitektur kuil-kuil pada masa lalu yang ditunjukkan dalam museum ini masih digunakan sebagai referensi hingga saat ini.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
