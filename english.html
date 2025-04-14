@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bar Navigasi</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    .hero {
+      height: 300px;
+      background-color: #fff6da;
+      background-image: url('download (10).gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px #000000;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      background-color: rgba(255, 249, 237, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header a {
+      color: #b3904f;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: rgba(247, 235, 212, 0.9);
+    }
+
+    header a:hover {
+      background-color: rgba(229, 215, 191, 0.9);
+      color: #624d24;
+      transform: scale(1.05);
+    }
+
+    .content-wrapper {
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto 40px auto;
+      padding: 0 20px;
+      align-items: center; /* <-- changed this line */
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #5c4b2f;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .book-layout {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .book-layout img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: rgb(124, 81, 2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>This is 'English'</h1>
+  </div>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="ips.html">IPS</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ppkn.html">PPKN</a>
+    <a href="english.html">English</a>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="text">
+      <p style="margin-bottom: 20px;">
+        For English, I made a travel magazine about Shifen Old Street in Taiwan. Shifen Old Street is one of the most popular tourist attractions in Taiwan, rich in culture and traditions. Its known for its unique custom and placement as its village is placed around Pingxi Railway.
+      </p>
+    </div>
+    <div class="image">
+      <img src="Screenshot 2025-04-14 121413.png" alt="Hualien Trip">
+    </div>
+  </div>
+
+  <div class="book-layout">
+    <img src="Screenshot 2025-04-14 121455.png" alt="Book Page 1 Left">
+    <img src="Screenshot 2025-04-14 121518.png" alt="Book Page 1 Right">
+  </div>
+
+  <div class="book-layout">
+    <img src="Screenshot 2025-04-14 121544.png" alt="Book Page 2 Left">
+    <img src="Screenshot 2025-04-14 121620.png" alt="Book Page 2 Right">
+  </div>
+
+</body>
+</html>
