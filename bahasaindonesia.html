@@ -1,67 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bar Navigasi</title>
 
-    <style>
-        body {
-            background-color: rgb(252, 252, 242);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: rgb(202, 252, 219);
-            text-align: center;
-            padding: 10px 0;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #ffffff;
+    }
 
-        header a {
-            color: rgb(39, 97, 80);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
+    .hero {
+      height: 300px;
+      background-color: #fff6da;
+      background-image: url('download (9).gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        header a:hover {
-            color: rgb(68, 172, 140);
-        }
+    .hero h1 {
+      color: #ffffff;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px #000000;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 30px;
-            color: rgb(39, 97, 80);
-        }
+    header {
+      background-color: rgba(255, 249, 237, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        p {
-            text-align: center;
-            font-size: 20px;
-            color: rgb(39, 97, 80);
-        }
+    header a {
+      color: #b3904f;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: rgba(247, 235, 212, 0.9);
+    }
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    header a:hover {
+      background-color: rgba(229, 215, 191, 0.9);
+      color: #624d24;
+      transform: scale(1.05);
+    }
 
-    </style>
+    .content-wrapper {
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #5c4b2f;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: rgb(124, 81, 2);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="ips.html">IPS</a>
-        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
-    </header>
 
-    <h1>Ini adalah halaman Bahasa Indonesia</h1>
-    <p>Dalam pelajaran Bahasa Indonesia, saya belajar tentang Teks Resensi.</p>
-    <img src="BI.jpg" width="853" height="426">
+  <div class="hero">
+    <h1>Ini Adalah 'Bahasa Indonesia'</h1>
+  </div>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="ips.html">IPS</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ppkn.html">PPKN</a>
+    <a href="english.html">English</a>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="text">
+      <p style="margin-bottom: 20px;">
+        <strong>Lakeshore Hotel : Menginap Seperti Sang Raja di Hualien</strong><br><br>
+        Nama Hotel   : Lakeshore Hotel Hualien<br>
+        Alamat           : No. 142號, Zhongmei Rd, Hualien City, Hualien County, Taiwan 970<br>
+        Email             : hualien@lakeshore.com.tw<br>
+        Nomor Telp.   : +886 3 822 2666<br>
+        Th. Dibangun : 2011<br>
+        Website          : Lakeshore Hotel Hualien<br>
+        Rating            : 4.4★
+      </p>
+    </div>
+    <div class="image">
+      <img src="Screenshot 2025-04-09 124044.png" alt="Hualien Trip">
+    </div>
+  </div>
+
+  <div class="content-wrapper" style="margin-top: 0;">
+    <div class="text" style="flex: 1 1 100%;">
+      <p style="margin-bottom: 20px;">
+        Sebagai orang yang sering bepergian, saya cenderung mencari keamanan dan kepuasan secara keseluruhan di hotel. Bersamaan dengan tempatnya yang berada di kota, namun tetap memiliki akses mudah untuk bepergian lebih jauh. Baru-baru ini, saya berkesempatan bepergian ke Taiwan, Hualien, dan menginap di Lakeshore Hotel selama empat hari, tiga malam, dan pengalamannya benar-benar mengatasi ekspektasi saya.
+      </p>
+
+      <p style="margin-bottom: 20px;">
+        Hotel ini berlokasi strategis di tengah banyak tempat wisata, seperti Pine Garden, Beibin Park, Nanbin Park, Dongdaemun Night Market, dan Meilun Area. Selain objek wisata di sekitar hotel, Hualien secara keseluruhan merupakan kota yang indah untuk dijelajahi.  Kota ini kaya akan budaya, dipengaruhi oleh sejarah, geografi, dan keberagaman etnis, dengan fokus pada seni, makanan, dan tradisi lokal. Nilai tukar mata uangnya juga tetap stabil selama beberapa tahun, dengan mata uang Indonesia hanya terdepresiasi sebesar 5,8% selama 6 bulan terakhir. Meskipun mata uang Indonesia telah melemah dari waktu ke waktu, fluktuasinya masih dapat ditoleransi. Saya rasa iklim Hualien tetap stabil sepanjang tahun, hanya mencapai puncak suhu pada pertengahan Juni hingga September. Bahkan saat itu, suhu tertinggi rata-rata yang mereka alami hanya 31°C (88°F) sedangkan suhu terendah cenderung terjadi pada bulan November hingga Maret, dengan suhu terendah rata-rata sekitar 16°C (60°F).
+      </p>
+
+      <p style="margin-bottom: 20px;">
+        Lakeshore Hotel Hualien, yang terletak di area pusat Meilun, Hualien, Taiwan, dibangun pada tahun 2011. Penempatan hotel menawarkan akses mudah ke banyak tempat menarik dan terletak di tengah kota namun tetap lumayan dekat dengan bandara. Saat pertama kali melangkah masuk ke dalam gedung, Anda langsung bisa merasakan suasana yang bersih dan rapi. Setiap bagian hotel benar-benar bersih dan semuanya memancarkan kesan mewah. Meja resepsionis berada di bawah lampu gantung, lantainya berkarpet, dan tangganya terbuat dari marmer. Selain memiliki estetika tempat yang mahal, hotel ini juga menawarkan fasilitas dan layanan yang dirancang untuk kenyamanan para tamu selama menginap. Hotel ini menawarkan restoran dengan makanan berkualitas tinggi di lobi, pusat kebugaran untuk tetap aktif selama kunjungan Anda yang terletak di lantai bawah, kolam renang, dan taman bermain untuk anak-anak yang lebih kecil. Hotel ini juga memiliki spa, sauna, ruang uap, ruang binatu, dan bahkan menawarkan parkir gratis tetapi tidak semua orang mencari sejumlah besar fasilitas saat mereka mencari hotel. Beberapa orang mencari keamanan, kenyamanan, dan saya di sini untuk memberi tahu Anda bahwa hotel ini juga memenuhi kriteria itu. Menurut website mereka, mereka menawarkan 213 kamar di 7 lantai dan memiliki check-in 24 jam. Meskipun kamar yang mereka tawarkan tidak berada di sisi yang lebih murah, kualitas dan kenyamanan keseluruhan menebusnya. Mereka menawarkan berbagai jenis kamar berdasarkan tujuan kunjungan Anda. Apakah Anda keluarga beranggotakan empat orang dengan 2 anak kecil? Mereka memiliki kamar keluarga deluxe dengan pemandangan laut yang siap untuk Anda! Apakah Anda di sini untuk urusan resmi dan terpaksa tinggal dengan rekan kerja? Saya sarankan kamar twin deluxe! Meskipun semua kamar yang mereka tawarkan berbeda, mereka cenderung memiliki ukuran yang konsisten di seluruh, dengan ukuran kamar 39 m² (atau 420 ft²). Selain ukurannya, kamar-kamar Lakeshore hotel juga dilengkapi dengan kulkas mini, TV, tempat tidur mewah, dan kamar mandi besar dengan pengering rambut, bak mandi, dan penutup kepala pancuran. Mereka juga menawarkan room service (yang sayangnya cukup mahal), telepon yang dapat menjangkau semua kamar dan lantai, dan pembersihan kamar setiap hari. Harga kamar termurah yang ditawarkan hotel ini adalah Rp 1.773.046 sedangkan yang termahal adalah Rp 3.792.250.
+      </p>
+
+      <p style="margin-bottom: 20px;">
+        Meskipun hotel ini menawarkan kenyamanan, keamanan, layanan, dan sejumlah besar fasilitas, kekurangan menginap di Lakeshore Hotel adalah harganya. Meskipun Anda dapat berargumen bahwa hotel ini menutupi kekurangan tersebut dengan berbagai hal yang mereka tawarkan, beberapa fasilitasnya tidak gratis. Artinya, sebagian besar fasilitas yang Anda gunakan akan dikenakan biaya dan akan ditambahkan ke total biaya Anda. Hotel ini juga memiliki AC yang terlalu dingin, yang akan terasa tidak tertahankan setelah beberapa hari, terutama selama bulan-bulan dingin di Hualien. Tetapi ini dapat dengan mudah diperbaiki dengan menyalakan AC, dan meminta beberapa selimut dan sandal tambahan untuk menghindari lantai yang dingin.
+      </p>
+
+      <p style="margin-bottom: 20px;">
+        Secara keseluruhan, ini adalah hotel yang sangat bagus; salah satu yang terbaik menurut saya, dengan banyaknya pilihan hiburan dan aktivitas, beserta kenyamanan kamar, kebersihan dan keteraturan secara keseluruhan, dan staf yang ramah yang menawarkan layanan hebat. Tetapi jika Anda menginap di hotel ini cobalah menghindari fasilitas terlalu mahal yang mereka tawarkan jika Anda memiliki anggaran terbatas. Jadi, jika Anda datang ke Hualien dan bingung mau ke mana, saya sarankan untuk mencoba Lakeshore Hotel sendiri!
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>
