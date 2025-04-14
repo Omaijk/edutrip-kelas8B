@@ -1,52 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bar Navigasi</title>
 
-    <style>
-        body {
-            background-color: rgb(255, 255, 255);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: rgb(16, 29, 102);
-            text-align: center;
-            padding: 10px 0;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #ffffff;
+    }
 
-        header a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            margin: 0 15px;
+    .hero {
+      height: 300px;
+      background-color: #dbdaff;
+      background-image: url('download (8).gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px #000000;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      background-color: rgba(238, 237, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header a {
+      color: #514fb3;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: rgba(221, 212, 247, 0.9);
+    }
+
+    header a:hover {
+      background-color: rgba(199, 191, 229, 0.9);
+      color: #242462;
+      transform: scale(1.05);
+    }
+
+    .content-wrapper {
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto 40px auto;
+      padding: 0 20px;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #2f315c;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    p {
             font-size: 20px;
-            transition: color 0.3s ease;
+            color: rgb(6, 2, 124);
         }
 
-        header a:hover {
-            color: rgb(255, 153, 0);
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 30px;
-            color: rgb(27, 33, 71);
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="ips.html">IPS</a>
-        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
-    </header>
 
-    <h1>Ini Adalah Halaman 'Home'</h1>
+  <div class="hero">
+    <h1>This is 'Home'</h1>
+  </div>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="ips.html">IPS</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ppkn.html">PPKN</a>
+    <a href="english.html">English</a>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="text">
+      <p>For Edutrip, I spent a week in Hualien, Taiwan. There, I got to explore the city, learn about its culture and history, learn about new skills, and enjoyed my time with friends. As preperation, I brought a suitcase filled with clothes for each day, toiletries, and stationery.</p>
+    </div>
+    <div class="image">
+      <img src="download (7).jpg" alt="Hualien Trip">
+    </div>
+  </div>
+
 </body>
 </html>
